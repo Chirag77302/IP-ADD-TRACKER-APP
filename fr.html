@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+    <h1 >IP Address Tracker</h1>
+    <div class="search"> 
+        <input type="text" id="id-search"  placeholder="Search for any IP Address or domain">
+        <button type="submit" onclick="getinput()" id = "mybtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <div class="wrapper">
+        <div class="info-bar">
+          
+          <div class="info-box">
+            <h4><strong> IP ADDRESS </strong></h4>
+            <div class="info" id="ip"><strong></strong> </div>
+          </div>
+          <hr width="1" size="70" />
+        
+          <div class="info-box">
+            <h4> <strong> LOCATION </strong> </h4>
+            <div class="info" id="location"><strong></strong> </div>
+          </div>
+          <hr width="1" size="70" />
+
+          <div class="info-box">
+            <h4> <strong> TIMEZONE </strong></h4>
+            <div class="info" id="timezone"><strong></strong> </div>
+          </div>
+          <hr width="1" size="70" />
+  
+          <div class="info-box">
+            <h4> <strong> ISP </strong> </h4>
+            <div class="info" id="isp"><strong></strong> </div>
+          </div>
+        
+        </div>
+      </div>
+    
+      </header>
+    <div id="mapid"></div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: none;
+}
+
+body{
+  font-family: 'Rubrik', sans-serif;
+  height: 100%;
+}
+
+hr {
+  border-style: none;
+  border-left: #EAE8E8 solid 2px;
+}
+
+header {
+  background-image: url("./styles/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 255px;
+  background-position: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+    padding: 30px 0 20px;
+    color: white;
+}
+
+input{
+    width: 500px;
+    height: 54px;
+    padding: 0 15px;
+    border-radius: 10px 0 0 10px;
+    border-style: none;
+    font-size: 1.2em;
+}
+
+input:focus{
+  outline: none;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+
+.fas{
+    padding: 5px;
+    font-size: 43px;
+    color: white;
+} 
+
+
+button{
+    height: 56.5px;
+    width: 45px;
+    border-style: none;
+    border-top-right-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+    background-color: black;
+    cursor: pointer;
+}
+
+button:hover {
+  filter: invert(0.12);
+}
+
+button:hover img {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+
+
+.message{
+    padding: 50px;
+}
+
+#mapid{
+  z-index: 1;
+  height: 75vh;
+}
+
+.info-bar {
+    background-color: #fff;
+    width: 83vw;
+    margin: 20px auto 0;
+    z-index: 2;
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .info-bar:first-child {
+    padding-top: 28px;
+  }
+  
+  .info-box {
+    /* display: inline-block; */
+    text-align: center;
+    height: 55px;
+  }
+  
+  .info-box h4 {
+    color: #969696;
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .info-box p {
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+
+  @media (min-width: 600px) {
+    .wrapper {
+      position: relative;
+      height: 150px;
+      width: 1050px;
+      margin: auto;
+    }
+    .info-bar {
+      background-color: #fff;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 1000px;
+      height: 150px;
+    }
+    .info-bar:first-child {
+      padding-top: 0;
+    }
+    .info-box {
+      width: 255px;
+      height: 95px;
+      padding-left: 30px;
+      text-align: left;
+    }
+    .info-box h4 {
+      color: #969696;
+      font-weight: 500;
+      font-size: 0.8rem;
+      letter-spacing: 1.5px;
+    }
+    .info-box .info {
+      padding-top: 10px;
+      font-weight: 500;
+      font-size: 1.4rem;
+    }
+  }
+  
+  
+  @media (max-width: 600px) {
+    header {
+      height: 300px;
+    }
+    h1 {
+      font-size: 1.7rem;
+      padding: 20px 0;
+    }
+    input {
+      width: 75vw;
+      font-size: 0.9rem;
+    }
+    hr {
+      display: none;
+    }
+  }
